@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="306" height="93"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVN-qD-hC4" userLabel="顶部">
+                    <rect key="frame" x="0.0" y="0.0" width="306" height="58"/>
+                    <color key="backgroundColor" red="0.93514972925186157" green="0.87705963850021362" blue="0.69671046733856201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ni7-gA-k3r" userLabel="底部">
+                    <rect key="frame" x="0.0" y="58" width="306" height="35"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar-light" translatesAutoresizingMaskIntoConstraints="NO" id="1Ee-xF-htq">
+                            <rect key="frame" x="0.0" y="0.0" width="306" height="35"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4M-CW-bmZ">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="Civ-hO-JP1"/>
+                            </constraints>
+                            <state key="normal" image="post-@"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7c4-ZA-mYS">
+                            <rect key="frame" x="35" y="0.0" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="5fU-dw-iFd"/>
+                            </constraints>
+                            <state key="normal" image="post-#"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="7c4-ZA-mYS" firstAttribute="leading" secondItem="M4M-CW-bmZ" secondAttribute="trailing" id="03E-r3-4ct"/>
+                        <constraint firstAttribute="trailing" secondItem="1Ee-xF-htq" secondAttribute="trailing" id="2W4-yb-I4b"/>
+                        <constraint firstItem="M4M-CW-bmZ" firstAttribute="leading" secondItem="ni7-gA-k3r" secondAttribute="leading" id="76S-B5-pLO"/>
+                        <constraint firstItem="1Ee-xF-htq" firstAttribute="leading" secondItem="ni7-gA-k3r" secondAttribute="leading" id="W1r-VD-gq1"/>
+                        <constraint firstAttribute="bottom" secondItem="1Ee-xF-htq" secondAttribute="bottom" id="Zu4-vN-WJQ"/>
+                        <constraint firstAttribute="height" constant="35" id="fyH-qB-hgA"/>
+                        <constraint firstItem="M4M-CW-bmZ" firstAttribute="top" secondItem="ni7-gA-k3r" secondAttribute="top" id="h6b-cg-Cel"/>
+                        <constraint firstAttribute="bottom" secondItem="M4M-CW-bmZ" secondAttribute="bottom" id="kfK-zB-ilG"/>
+                        <constraint firstItem="1Ee-xF-htq" firstAttribute="top" secondItem="ni7-gA-k3r" secondAttribute="top" id="oTj-11-Z7P"/>
+                        <constraint firstItem="7c4-ZA-mYS" firstAttribute="top" secondItem="ni7-gA-k3r" secondAttribute="top" id="rsX-hn-A1u"/>
+                        <constraint firstAttribute="bottom" secondItem="7c4-ZA-mYS" secondAttribute="bottom" id="rup-Gc-NXW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ni7-gA-k3r" secondAttribute="bottom" id="2xB-7b-onl"/>
+                <constraint firstAttribute="trailing" secondItem="qVN-qD-hC4" secondAttribute="trailing" id="HIO-7p-Vsa"/>
+                <constraint firstItem="qVN-qD-hC4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xsr-fI-ZKj"/>
+                <constraint firstItem="ni7-gA-k3r" firstAttribute="top" secondItem="qVN-qD-hC4" secondAttribute="bottom" id="ZZ4-km-cDH"/>
+                <constraint firstItem="qVN-qD-hC4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zrc-WD-9Kw"/>
+                <constraint firstAttribute="trailing" secondItem="ni7-gA-k3r" secondAttribute="trailing" id="c1L-2d-WAt"/>
+                <constraint firstItem="ni7-gA-k3r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="prE-xr-FvA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-240" y="155.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="post-#" width="19" height="19"/>
+        <image name="post-@" width="19" height="19"/>
+        <image name="tabbar-light" width="320" height="49"/>
+    </resources>
+</document>
